@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="NOVA@DESKTOP-QU64C1P" uuid="c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://DESKTOP-QU64C1P;database=NOVA</jdbc-url>
+    </data-source>
+  </component>
+</project>
