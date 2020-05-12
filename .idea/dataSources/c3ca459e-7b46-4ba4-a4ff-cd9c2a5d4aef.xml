@@ -69,6 +69,7 @@
     </schema>
     <table id="20" parent="17" name="test_entity">
       <ObjectId>1429580131</ObjectId>
+      <Outdated>1</Outdated>
       <CreatedTimestamp>2020-05-12.18:07:02.993</CreatedTimestamp>
       <ModifiedTimestamp>2020-05-12.18:07:02.993</ModifiedTimestamp>
     </table>

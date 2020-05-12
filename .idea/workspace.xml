@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12209e3-3bd7-4022-acf2-53937dda2f43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/core/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/repositories/TestRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/public.abK9xQ.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef/storage_v2/_src_/database/NOVA.LKgkAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef/storage_v2/_src_/database/NOVA.LKgkAA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/TestEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/TestEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/models/TestEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/immediatlyApp/models/TestEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +118,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:NOVA@DESKTOP-QU64C1P" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@48310e50" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@132f37d2" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -199,7 +185,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit mess" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit mess" />
+    <MESSAGE value="added BaseEntity and example TestRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="added BaseEntity and example TestRepository" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Assign_Data_Sources" timestamp="1589292081241">
