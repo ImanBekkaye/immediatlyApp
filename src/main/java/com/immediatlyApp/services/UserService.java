@@ -2,16 +2,19 @@ package com.immediatlyApp.services;
 
 import com.immediatlyApp.models.entity.User;
 import com.immediatlyApp.repositories.UserRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
-    @Autowired
-    private UserRepository userRepository;
+
+    private final UserRepository userRepository;
+
 
     public void addUser(User user){
         userRepository.save(user);

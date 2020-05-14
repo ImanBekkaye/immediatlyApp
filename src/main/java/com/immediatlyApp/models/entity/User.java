@@ -1,7 +1,10 @@
 package com.immediatlyApp.models.entity;
 
 import com.immediatlyApp.core.BaseEntity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
@@ -11,7 +14,9 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User  extends BaseEntity{
 
     @Column(length = 50, unique = true)
@@ -28,7 +33,6 @@ public class User  extends BaseEntity{
     @NotNull
     @Size(min = 4, max = 50)
     private String firstName;
-
 
     @Column(length = 50)
     @NotNull
