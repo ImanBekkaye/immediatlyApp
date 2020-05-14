@@ -1,22 +1,24 @@
 package com.immediatlyApp.models;
 
+
+import com.immediatlyApp.core.BaseEntity;
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
+import javax.persistence.*;
 
 
 @Entity
 @Data
-public class TestEntity {
+@Table
+public class TestEntity extends BaseEntity {
 
-    @Id
-    @Column(name = "id", nullable = false)
-    private int id;
-    @Column(name = "name")
     private String name;
+    private String key;
+
+    protected TestEntity(){
+         super();
+     }
+
 
 
 }
