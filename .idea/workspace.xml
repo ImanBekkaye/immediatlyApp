@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12209e3-3bd7-4022-acf2-53937dda2f43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/core/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/core/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/immediatlyApp/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/models/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/service/UserService.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef/storage_v2/_src_/database/NOVA.LKgkAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef/storage_v2/_src_/database/NOVA.LKgkAA/schema/dbo.sYMBAA.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +37,13 @@
         <item name="NOVA@DESKTOP-QU64C1P" type="feb32156:DbDataSourceImpl" />
         <item name="NOVA: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="NOVA@DESKTOP-QU64C1P" type="feb32156:DbDataSourceImpl" />
+        <item name="NOVA: database" type="ccb7ac2a:MsImplModel$Database" />
+        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
+        <item name="user: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
     </expand>
     <select />
