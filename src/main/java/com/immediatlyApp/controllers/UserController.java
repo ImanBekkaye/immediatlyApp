@@ -1,28 +1,29 @@
 package com.immediatlyApp.controllers;
 
 
-import com.immediatlyApp.models.User;
-import com.immediatlyApp.service.UserService;
+import com.immediatlyApp.models.entity.User;
+import com.immediatlyApp.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
+@Validated
 public class UserController {
 
     @Autowired
     private UserService userService;
 
     @RequestMapping(value = "/user/save/", method = RequestMethod.POST)
-    @ResponseStatus(HttpStatus.OK)
-    public void addUser(@RequestBody User user){
+    public void addUser(@RequestBody @Valid User user){
         userService.addUser(user);
     }
 
     @RequestMapping(value = "/user/delete/{userId}/", method = RequestMethod.DELETE)
-    @ResponseStatus(HttpStatus.OK)
     public void addUser(@PathVariable long userId){
         userService.deleteById(userId);
     }

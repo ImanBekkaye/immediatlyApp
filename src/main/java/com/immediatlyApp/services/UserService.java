@@ -1,7 +1,7 @@
-package com.immediatlyApp.service;
+package com.immediatlyApp.services;
 
-import com.immediatlyApp.models.User;
-import com.immediatlyApp.repository.UserRepository;
+import com.immediatlyApp.models.entity.User;
+import com.immediatlyApp.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
