@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12209e3-3bd7-4022-acf2-53937dda2f43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/core/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/repositories/TestRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5edec681-b295-4fc5-8d01-8cf7f138cb1e/storage_v2/_src_/database/kcnsupxv.djFnog/schema/public.abK9xQ.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/core/LookupEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/proba/TestEntity2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/proba/TestLookupEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef/storage_v2/_src_/database/NOVA.LKgkAA/schema/dbo.sYMBAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c3ca459e-7b46-4ba4-a4ff-cd9c2a5d4aef/storage_v2/_src_/database/NOVA.LKgkAA/schema/dbo.sYMBAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/TestEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/TestEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/TestEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/models/proba/TestEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/repositories/TestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/immediatlyApp/repositories/TestRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/models/TestEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/immediatlyApp/models/TestEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/immediatlyApp/models/TestEntity.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,20 +46,6 @@
         <item name="NOVA@DESKTOP-QU64C1P" type="feb32156:DbDataSourceImpl" />
         <item name="NOVA: database" type="ccb7ac2a:MsImplModel$Database" />
         <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="NOVA@DESKTOP-QU64C1P" type="feb32156:DbDataSourceImpl" />
-        <item name="NOVA: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="test_entity: table" type="63ab2ba1:MsImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="NOVA@DESKTOP-QU64C1P" type="feb32156:DbDataSourceImpl" />
-        <item name="NOVA: database" type="ccb7ac2a:MsImplModel$Database" />
-        <item name="dbo: schema" type="2865ee2e:MsImplModel$Schema" />
-        <item name="user: table" type="63ab2ba1:MsImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -131,17 +113,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:NOVA@DESKTOP-QU64C1P" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:NOVA@DESKTOP-QU64C1P" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@48310e50" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -185,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588243604148</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added JpaRepository">
+      <created>1589299420724</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589299420724</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +185,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit mess" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit mess" />
+    <MESSAGE value="added BaseEntity and example TestRepository" />
+    <MESSAGE value="added JpaRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="added JpaRepository" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="72" key="#Assign_Data_Sources" timestamp="1589292081241">
@@ -225,47 +206,47 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="539" y="273" width="457" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1588165812260" />
-    <state x="389" y="7" width="1147" height="809" key="CommitChangelistDialog2" timestamp="1588243603325">
+    <state x="389" y="7" width="1147" height="809" key="CommitChangelistDialog2" timestamp="1589299419485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="389" y="7" width="1147" height="809" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588243603325" />
+    <state x="389" y="7" width="1147" height="809" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589299419485" />
     <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1588170135682">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588170135682" />
-    <state width="1493" height="232" key="GridCell.Tab.0.bottom" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom" timestamp="1589303057125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.0.center" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589303057125" />
+    <state width="1493" height="232" key="GridCell.Tab.0.center" timestamp="1589303057125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.0.left" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589303057125" />
+    <state width="1493" height="232" key="GridCell.Tab.0.left" timestamp="1589303057125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.0.right" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589303057125" />
+    <state width="1493" height="232" key="GridCell.Tab.0.right" timestamp="1589303057125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.1.bottom" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589303057125" />
+    <state width="1493" height="232" key="GridCell.Tab.1.bottom" timestamp="1589303057126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.1.center" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589303057126" />
+    <state width="1493" height="232" key="GridCell.Tab.1.center" timestamp="1589303057126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.1.left" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589303057126" />
+    <state width="1493" height="232" key="GridCell.Tab.1.left" timestamp="1589303057126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="232" key="GridCell.Tab.1.right" timestamp="1589453298544">
+    <state width="1493" height="232" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589303057126" />
+    <state width="1493" height="232" key="GridCell.Tab.1.right" timestamp="1589303057126">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="232" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589453298544" />
-    <state width="1493" height="473" key="GridCell.Tab.2.bottom" timestamp="1588190648822">
+    <state width="1493" height="232" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589303057126" />
+    <state width="993" height="158" key="GridCell.Tab.2.bottom" timestamp="1589291369347">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="993" height="158" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589291369347" />
@@ -297,13 +278,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="627" y="151" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1588191891375" />
-    <state x="440" y="126" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589453252124">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1588857671232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="440" y="126" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1589453252124" />
-    <state x="472" y="205" key="git4idea.merge.GitPullDialog" timestamp="1589453430294">
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588857671232" />
+    <state x="440" y="126" key="git4idea.branch.GitSmartOperationDialog" timestamp="1589452528132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="472" y="205" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1589453430294" />
+    <state x="440" y="126" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1589452528132" />
+    <state x="472" y="205" key="git4idea.merge.GitPullDialog" timestamp="1588243686295">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="472" y="205" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1588243686295" />
   </component>
 </project>

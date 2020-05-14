@@ -1,4 +1,4 @@
-package com.immediatlyApp.models;
+package com.immediatlyApp.models.proba;
 
 
 import com.immediatlyApp.core.BaseEntity;
