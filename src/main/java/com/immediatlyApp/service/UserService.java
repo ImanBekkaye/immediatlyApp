@@ -36,7 +36,7 @@ public class UserService {
         try{
             userRepository.deleteById(id);
         }catch (Exception e){
-            throw new IllegalArgumentException("Could not delete employee academic title.");
+            throw new IllegalArgumentException("Could not delete user");
         }
     }
 

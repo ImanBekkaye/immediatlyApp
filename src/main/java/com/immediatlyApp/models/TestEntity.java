@@ -10,6 +10,8 @@ import javax.persistence.Id;
 
 @Entity
 @Data
+
+
 public class TestEntity {
 
     @Id
@@ -17,6 +19,7 @@ public class TestEntity {
     private int id;
     @Column(name = "name")
     private String name;
+
 
 
 }
