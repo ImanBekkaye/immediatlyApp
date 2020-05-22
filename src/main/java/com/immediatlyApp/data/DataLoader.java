@@ -1,6 +1,10 @@
 package com.immediatlyApp.data;
 
 import com.immediatlyApp.models.entity.User;
+import com.immediatlyApp.models.entity.UserOfferServiceType;
+import com.immediatlyApp.models.lookups.LKPServiceType;
+import com.immediatlyApp.repositories.LKPRepository;
+import com.immediatlyApp.repositories.UserOfferedServiceTypeRepository;
 import com.immediatlyApp.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.InitializingBean;
@@ -14,6 +18,9 @@ import java.util.Date;
 public class DataLoader implements InitializingBean {
 
     private final UserRepository userRepository;
+    private final LKPRepository lkpServiceRepository;
+    private  final UserOfferedServiceTypeRepository userOfferedServiceTypeRepository;
+
 
     /**
      * Invoked by the containing {@code BeanFactory} after it has set all bean properties
@@ -27,16 +34,11 @@ public class DataLoader implements InitializingBean {
     @Override
     @Validated
     public void afterPropertiesSet() throws Exception {
-        User u1 = User.builder()
-                .username("imanb")
-                .firstName("iman")
-                .password("salhdfiluasdghulhdfih")
-                .lastName("Bekkaye")
-                .address("Hendekusa")
-                .email("imanbekkaye@hotmail.com")
-                .dateOfBirth(new Date())
-
-                .build();
+        User u1 = User.builder().username("imanb").firstName("iman").password("salhdfiluasdghulhdfih").lastName("Bekkaye").address("Hendekusa").email("imanbekkaye@hotmail.com").dateOfBirth(new Date()).build();
         userRepository.save(u1);
+        LKPServiceType s1 = LKPServiceType.builder().name("Usluga1").key("k1").build();
+        lkpServiceRepository.save(s1);
+        UserOfferServiceType us1= UserOfferServiceType.builder().user(u1).lkpServiceType(s1).description("Testna usluga usera").maxPerson(10).build();
+        userOfferedServiceTypeRepository.save(us1);
     }
 }
