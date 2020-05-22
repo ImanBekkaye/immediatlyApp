@@ -50,7 +50,6 @@ public class User  extends BaseEntity{
 
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
-    @Column
     private Date registerDate;
 
     @NotNull
