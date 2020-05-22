@@ -1,23 +1,23 @@
-package com.immediatlyApp.models;
+package com.immediatlyApp.models.entity;
 
-
+import com.immediatlyApp.core.BaseEntity;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.sql.Timestamp;
 import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "user")
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    private Long id;
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class User  extends BaseEntity{
 
     @Column(length = 50, unique = true)
     @NotNull
@@ -33,7 +33,6 @@ public class User {
     @NotNull
     @Size(min = 4, max = 50)
     private String firstName;
-
 
     @Column(length = 50)
     @NotNull
@@ -51,10 +50,10 @@ public class User {
 
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "register_date")
-    private Date register_date;
+    @Column
+    private Date registerDate;
 
     @NotNull
-    private Date date_of_birth;
+    private Date dateOfBirth;
 
 }
