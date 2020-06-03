@@ -7,17 +7,28 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
 
 @Data
 @Entity
-@Table(name = "LKP_Service_Type")
-public class LKPServiceType extends LookupEntity {
+@Table(name = "LKP_City")
+@NoArgsConstructor
+@AllArgsConstructor
 
+public class LKPCity extends LookupEntity {
+
+    @ManyToOne
+    private LKPCountry lkpCountry;
 
     @Builder
-    public LKPServiceType(String name, String key) {
+    LKPCity(String name,String key,LKPCountry country){
         super(name,key);
+        this.lkpCountry = country;
+
     }
+
+
 
 }

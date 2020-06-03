@@ -1,6 +1,8 @@
 package com.immediatlyApp.models.entity;
 
 import com.immediatlyApp.core.BaseEntity;
+import com.immediatlyApp.models.lookups.LKPCity;
+import com.immediatlyApp.models.lookups.LKPCountry;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -55,4 +57,9 @@ public class User  extends BaseEntity{
     @NotNull
     private Date dateOfBirth;
 
+    @ManyToOne
+    private LKPCountry country;
+
+    @ManyToOne
+    private LKPCity city;
 }
