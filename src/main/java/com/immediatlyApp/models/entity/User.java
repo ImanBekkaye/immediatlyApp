@@ -19,6 +19,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@AttributeOverride(name = "id" ,column = @Column(name = "user_id"))
 public class User  extends BaseEntity{
 
     @Column(length = 50, unique = true)
@@ -58,6 +59,7 @@ public class User  extends BaseEntity{
     private Date dateOfBirth;
 
     @ManyToOne
+    @JoinColumn(name = "country_id")
     private LKPCountry country;
 
     @ManyToOne

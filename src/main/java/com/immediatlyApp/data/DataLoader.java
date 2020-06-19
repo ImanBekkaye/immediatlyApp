@@ -43,27 +43,27 @@ public class DataLoader implements InitializingBean {
     @Override
     @Validated
     public void afterPropertiesSet() throws Exception {
-        LKPCountry country = LKPCountry.builder().name("Bosna i Hercegovina").key("k1").build();
+        LKPCountry country = LKPCountry.builder().name("Bosna i Hercegovina").build();
         lkpCountryRepository.save(country);
-        LKPCity city = LKPCity.builder().name("Sarajevo").key("k1").country(country).build();
+        LKPCity city = LKPCity.builder().name("Sarajevo").country(country).build();
         lkpCityRepository.save(city);
         User u1 = User.builder().username("imanb").firstName("iman").password("salhdfiluasdghulhdfih").lastName("Bekkaye")
                 .address("Hendekusa").email("imanbekkaye@hotmail.com")
                 .dateOfBirth(new Date()).city(city).country(country).build();
         userRepository.save(u1);
-        LKPServiceType s1 = LKPServiceType.builder().name("Usluga1").key("k1").build();
-        lkpServiceRepository.save(s1);
-        UserOfferServiceType us1= UserOfferServiceType.builder().user(u1).lkpServiceType(s1).description("Testna usluga usera").maxPerson(10).build();
-        userOfferedServiceTypeRepository.save(us1);
-
-        LKPImpression im = LKPImpression.builder().name("Pozitivan").key("1").build();
-        lkpImpressionRepository.save(im);
-
-        UserImpression ui = UserImpression.builder().lkpImpression(im).user(u1).impression("Sve je super").build();
-        userImpressionRepository.save(ui);
-
-        UserDidServiceType uds = UserDidServiceType.builder().user(u1).lkpServiceType(s1).number(1).build();
-        userDidServiceTypeRepository.save(uds);
+//        LKPServiceType s1 = LKPServiceType.builder().name("Usluga1").key("k1").build();
+//        lkpServiceRepository.save(s1);
+//        UserOfferServiceType us1= UserOfferServiceType.builder().user(u1).lkpServiceType(s1).description("Testna usluga usera").maxPerson(10).build();
+//        userOfferedServiceTypeRepository.save(us1);
+//
+//        LKPImpression im = LKPImpression.builder().name("Pozitivan").key("1").build();
+//        lkpImpressionRepository.save(im);
+//
+//        UserImpression ui = UserImpression.builder().lkpImpression(im).user(u1).impression("Sve je super").build();
+//        userImpressionRepository.save(ui);
+//
+//        UserDidServiceType uds = UserDidServiceType.builder().user(u1).lkpServiceType(s1).number(1).build();
+//        userDidServiceTypeRepository.save(uds);
 
     }
 }

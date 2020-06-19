@@ -5,5 +5,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LKPCityRepository extends JpaRepository<LKPCity,Long> {
     LKPCity findLKPCityByName(String name);
-    LKPCity findLKPCityByKey(String key);
+  //  LKPCity findLKPCityByKey(String key);
 }
