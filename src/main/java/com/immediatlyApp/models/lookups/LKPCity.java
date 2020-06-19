@@ -21,7 +21,7 @@ import javax.validation.constraints.NotNull;
 
 public class LKPCity extends BaseEntity {
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "country_id")
     private LKPCountry country;
     @NotNull

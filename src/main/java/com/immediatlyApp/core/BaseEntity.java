@@ -1,8 +1,10 @@
 package com.immediatlyApp.core;
 
 
-import javax.persistence.*;
+import lombok.Getter;
 
+import javax.persistence.*;
+@Getter
 @MappedSuperclass
 public abstract class BaseEntity {
     @Id

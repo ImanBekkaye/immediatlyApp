@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 public abstract class LookupEntity extends BaseEntity {
     @NotNull
-     private String name;
+    private String name;
     @NotNull
-   private String key;
+    private String key;
 }

@@ -58,10 +58,11 @@ public class User  extends BaseEntity{
     @NotNull
     private Date dateOfBirth;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "country_id")
     private LKPCountry country;
 
     @ManyToOne
+    @JoinColumn(name = "city_id")
     private LKPCity city;
 }
