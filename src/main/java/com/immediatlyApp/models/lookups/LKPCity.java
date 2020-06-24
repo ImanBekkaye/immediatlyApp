@@ -15,15 +15,17 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "LKP_City")
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @AttributeOverride(name = "id" ,column = @Column(name = "city_id"))
 
-public class LKPCity extends BaseEntity {
+public class LKPCity extends LookupEntity {
+    public LKPCity(@NotNull String name, @NotNull String key,@NotNull LKPCountry country) {
+        super(name, key);
+        this.country = country;
+    }
 
-    @OneToOne
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "country_id")
     private LKPCountry country;
-    @NotNull
-    private String name;
+
 }

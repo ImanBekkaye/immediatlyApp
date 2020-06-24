@@ -7,15 +7,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.sql.Date;
 
 @Data
 @Entity
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@AttributeOverride(name = "id" ,column = @Column(name = "user_offer_service_type_id"))
 public class UserOfferServiceType extends BaseEntity {
 
     private String description;
@@ -24,9 +23,11 @@ public class UserOfferServiceType extends BaseEntity {
     private int maxPerson;
 
     @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
     @ManyToOne
-    private LKPServiceType lkpServiceType;
+    @JoinColumn(name = "service_type_id")
+    private LKPServiceType serviceType;
 
 
 }

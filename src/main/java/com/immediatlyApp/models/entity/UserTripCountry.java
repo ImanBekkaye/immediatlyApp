@@ -8,22 +8,27 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Date;
 @Data
 @Entity
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserCountry extends BaseEntity {
+@AttributeOverride(name = "id" ,column = @Column(name = "user_trip_country_id"))
+public class UserTripCountry extends BaseEntity {
 //Table User is going to visit country
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "country_id")
     private LKPCountry country;
-    @ManyToOne
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "city_id")
     private LKPCity city;
+
     private Date from_date;
     private Date to_date;
 }

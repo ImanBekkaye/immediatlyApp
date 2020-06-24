@@ -17,10 +17,9 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "LKP_Service_Type")
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @AttributeOverride(name = "id" ,column = @Column(name = "service_type_id"))
-public class LKPServiceType extends BaseEntity {
-    @NotNull
-    private String name;
+public class LKPServiceType extends LookupEntity {
+    public LKPServiceType(@NotNull String name, @NotNull String key) {
+        super(name, key);
+    }
 }

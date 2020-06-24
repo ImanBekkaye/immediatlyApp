@@ -23,7 +23,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/save/")
-    public void addUser(@RequestBody @Valid User user){
+    public void addUser(@RequestBody User user){
         userService.addUser(user);
     }
     @DeleteMapping("/delete/{userId}/")

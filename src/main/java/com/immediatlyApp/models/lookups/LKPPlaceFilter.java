@@ -17,10 +17,9 @@ import javax.validation.constraints.NotNull;
 @Data
 @Table(name = "LKP_Place_Filter")
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
-@AttributeOverride(name = "id" ,column = @Column(name = "service_type_id"))
-public class LKPPlaceFilter extends BaseEntity {
-    @NotNull
-    private String name;
+@AttributeOverride(name = "id" ,column = @Column(name = "place_filter_id"))
+public class LKPPlaceFilter extends LookupEntity {
+    public LKPPlaceFilter(@NotNull String name, @NotNull String key) {
+        super(name, key);
+    }
 }

@@ -18,10 +18,9 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table (name = "LKP_Impression")
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @AttributeOverride(name = "id" ,column = @Column(name = "impression_id"))
-public class LKPImpression extends BaseEntity {
-    @NotNull
-    private String name;
+public class LKPImpression extends LookupEntity {
+    public LKPImpression(@NotNull String name, @NotNull String key) {
+        super(name, key);
+    }
 }

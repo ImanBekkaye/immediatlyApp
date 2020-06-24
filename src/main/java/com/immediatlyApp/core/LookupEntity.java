@@ -8,6 +8,7 @@ import javax.validation.constraints.NotNull;
 @MappedSuperclass
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
 public abstract class LookupEntity extends BaseEntity {
     @NotNull
     private String name;

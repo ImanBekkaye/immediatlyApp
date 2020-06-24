@@ -19,21 +19,14 @@ import java.util.prefs.Preferences;
 @Entity
 @Table(name = "LKP_Country")
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @AttributeOverride(name = "id" ,column = @Column(name = "country_id"))
-public class LKPCountry extends BaseEntity {
-
-
-    @NotNull
-    private String name;
-
+public class LKPCountry extends LookupEntity {
+    public LKPCountry(@NotNull String name, @NotNull String key) {
+        super(name, key);
+    }
+/*
     @OneToMany(mappedBy = "country")
     List<User> users = new ArrayList<>();
 
-
-
-    public void addUser(User user) {
-        this.users.add(user);
-    }
+ */
 }

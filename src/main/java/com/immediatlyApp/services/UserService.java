@@ -1,6 +1,8 @@
 package com.immediatlyApp.services;
 
 import com.immediatlyApp.models.entity.User;
+import com.immediatlyApp.models.lookups.LKPCountry;
+import com.immediatlyApp.repositories.LKPCountryRepository;
 import com.immediatlyApp.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,7 @@ public class UserService {
 
 
     private final UserRepository userRepository;
+    private final LKPCountryRepository countryRepository;
 
 
     public void addUser(User user){
