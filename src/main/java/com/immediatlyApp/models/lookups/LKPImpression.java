@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class LKPImpression extends LookupEntity {
 
     @Builder
-    LKPImpression(String name,String key){
+   public  LKPImpression(String name,String key){
         super(name,key);
     }
 }

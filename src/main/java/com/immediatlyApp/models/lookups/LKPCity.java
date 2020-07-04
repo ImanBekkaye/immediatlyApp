@@ -23,7 +23,7 @@ public class LKPCity extends LookupEntity {
     private LKPCountry lkpCountry;
 
     @Builder
-    LKPCity(String name,String key,LKPCountry country){
+    public LKPCity(String name,String key,LKPCountry country){
         super(name,key);
         this.lkpCountry = country;
 

@@ -58,6 +58,7 @@ public class User  extends BaseEntity{
     private Date dateOfBirth;
 
     @ManyToOne
+    @JoinColumn(name = "country_id")
     private LKPCountry country;
 
     @ManyToOne
