@@ -16,7 +16,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AttributeOverride(name = "id" ,column = @Column(name = "user_impression_id"))
 public class UserImpression extends BaseEntity {
-    private String impression;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "impression_id")

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,13 +22,15 @@ public class UserController {
 
 
     private final UserService userService;
+    private final PasswordEncoder bcryptEncoder;
 
-    @PostMapping("/save/")
-    public void addUser(@RequestBody User user){
+    @PostMapping("/register")
+    public void saveUser(@RequestBody User user){
+        user.setPassword(bcryptEncoder.encode(user.getPassword()));
         userService.addUser(user);
     }
     @DeleteMapping("/delete/{userId}/")
-    public void addUser(@PathVariable @Valid long userId){
+    public void deleteUser(@PathVariable @Valid long userId){
         userService.deleteById(userId);
     }
     @GetMapping("/all")

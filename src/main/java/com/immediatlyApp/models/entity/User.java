@@ -64,4 +64,21 @@ public class User  extends BaseEntity{
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "city_id")
     private LKPCity city;
+
+    /*
+    {
+  "username" : "ermino",
+  "password" : "password",
+  "firstName" : "Ermin",
+  "lastName" : "Omeragic",
+  "email" : "erminnn@hotmail.com",
+  "country" : {
+    "id" : "1"
+  },
+  "city" : {
+    "id" : "3"
+  }
+
+}
+     */
 }
