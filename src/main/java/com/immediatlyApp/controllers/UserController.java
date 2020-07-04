@@ -23,7 +23,7 @@ public class UserController {
     private final UserService userService;
 
     @PostMapping("/save/")
-    public void addUser(@RequestBody @Valid User user){
+    public void addUser(@RequestBody User user){
         userService.addUser(user);
     }
     @DeleteMapping("/delete/{userId}/")
@@ -38,7 +38,6 @@ public class UserController {
     public User findByEmail(@PathVariable @Valid String email){
         return userService.findByEmail(email);
     }
-
     @GetMapping("/findByUsername/{username}/")
     public User findByUsername(@PathVariable @Valid String username){
         return userService.findByUsername(username);

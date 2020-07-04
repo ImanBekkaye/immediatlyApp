@@ -16,9 +16,9 @@ import java.util.Date;
 
 @Data
 @Entity
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@AttributeOverride(name = "id" ,column = @Column(name = "user_id"))
 public class User  extends BaseEntity{
 
     @Column(length = 50, unique = true)
@@ -54,13 +54,14 @@ public class User  extends BaseEntity{
     @Temporal(TemporalType.TIMESTAMP)
     private Date registerDate;
 
-    @NotNull
+    //@NotNull
     private Date dateOfBirth;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "country_id")
     private LKPCountry country;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "city_id")
     private LKPCity city;
 }

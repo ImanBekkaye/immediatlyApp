@@ -6,5 +6,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface LKPCountryRepository extends JpaRepository<LKPCountry,Long> {
     LKPCountry findLKPCountryByName(String name);
-    LKPCountry findLKPCountryByKey(String key);
 }
