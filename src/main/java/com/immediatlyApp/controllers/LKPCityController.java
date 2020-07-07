@@ -24,5 +24,12 @@ public class LKPCityController {
         cityService.addCity(city);
     }
 
+    @GetMapping("/country-id/{countryId}")
+    public List<LKPCity> getCitiesByCountryId(@PathVariable Long countryId){
+        return cityService.getCitiesByCountryId(countryId);
+    }
+
+
+
 
 }

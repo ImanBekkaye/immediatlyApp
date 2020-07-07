@@ -7,7 +7,9 @@ import com.immediatlyApp.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 @Service
@@ -46,4 +48,12 @@ public class UserService {
         }
     }
 
+    public void editProfileImage(String user,byte[] image) throws IOException {
+        userRepository.editProfileImage(user,image);
+    }
+
+
+    public byte[] getUserProfileImage(String user) {
+        return userRepository.getUserProfileImage(user);
+    }
 }

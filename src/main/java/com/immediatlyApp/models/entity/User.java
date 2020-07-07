@@ -47,6 +47,7 @@ public class User  extends BaseEntity{
     private String email;
 
     @Column(length = 50)
+    @NotNull
     @Size(min = 4, max = 50)
     private String address;
 
@@ -54,31 +55,20 @@ public class User  extends BaseEntity{
     @Temporal(TemporalType.TIMESTAMP)
     private Date registerDate;
 
-    //@NotNull
+    @NotNull
     private Date dateOfBirth;
+
+    @Lob
+    private byte[] profileImage;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "country_id")
+    @NotNull
     private LKPCountry country;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "city_id")
+    @NotNull
     private LKPCity city;
 
-    /*
-    {
-  "username" : "ermino",
-  "password" : "password",
-  "firstName" : "Ermin",
-  "lastName" : "Omeragic",
-  "email" : "erminnn@hotmail.com",
-  "country" : {
-    "id" : "1"
-  },
-  "city" : {
-    "id" : "3"
-  }
-
-}
-     */
 }

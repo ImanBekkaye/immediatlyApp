@@ -20,4 +20,8 @@ public class LKPCityService {
     public void addCity(LKPCity city){
         cityRepository.save(city);
     }
+
+    public List<LKPCity> getCitiesByCountryId(Long countryId) {
+        return cityRepository.getCitiesByCountryId(countryId);
+    }
 }
