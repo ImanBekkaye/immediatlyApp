@@ -46,10 +46,6 @@ public class User  extends BaseEntity{
     @Size(min = 4, max = 50)
     private String email;
 
-    @Column(length = 50)
-    @NotNull
-    @Size(min = 4, max = 50)
-    private String address;
 
     @CreationTimestamp
     @Temporal(TemporalType.TIMESTAMP)
@@ -58,8 +54,8 @@ public class User  extends BaseEntity{
     @NotNull
     private Date dateOfBirth;
 
-    @Lob
-    private byte[] profileImage;
+
+    private String profileImage;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "country_id")

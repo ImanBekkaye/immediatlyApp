@@ -2,19 +2,14 @@ package com.immediatlyApp.controllers;
 
 import com.immediatlyApp.models.entity.User;
 import com.immediatlyApp.services.UserService;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
 import javax.validation.Valid;
-import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
+
 
 
 @RestController
@@ -29,9 +24,6 @@ public class UserController {
 
     @PostMapping("/register")
     public void saveUser(@RequestBody User user){
-        user.setPassword(bcryptEncoder.encode(user.getPassword()));
-        byte[] defaultUserImage = userService.getUserProfileImage("admin");
-        user.setProfileImage(defaultUserImage);
         userService.addUser(user);
     }
 
@@ -55,13 +47,27 @@ public class UserController {
         return userService.findByUsername(username);
     }
 
-    @PostMapping(value = "/profile/{user}/edit-profile-image" ,consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-    public void editProfileImage(@PathVariable(name = "user") String user,@RequestParam  MultipartFile file) throws IOException {
-        userService.editProfileImage(user,file.getBytes());
+    @PostMapping(value = "/profile/{user}/edit-profile")
+    public void editProfile(@PathVariable(name = "user") String user,@RequestBody  User editedUser) throws UnsupportedEncodingException {
+
+
+        userService.updateUser(editedUser);
+
+
     }
     @GetMapping("/profile/{user}/user-image")
-    public byte[] getUserProfileImage(@PathVariable(name = "user") String user){
+    public String getUserProfileImage(@PathVariable(name = "user") String user){
         return userService.getUserProfileImage(user);
     }
+
+    @GetMapping("/{username}")
+    public Long getUserIdByUsername(@RequestParam String username){
+       return userService.getUserIdByUsername(username);
+    }
+
+
+
+
+
 
 }

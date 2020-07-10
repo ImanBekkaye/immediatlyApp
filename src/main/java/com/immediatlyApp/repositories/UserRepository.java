@@ -19,13 +19,13 @@ public interface UserRepository extends JpaRepository<User,Long> {
     @Query("SELECT u FROM User u INNER JOIN u.country")
     List<User> findAll();
 
-    @Transactional
-    @Modifying
-    @Query("UPDATE User set profileImage = :image where username = :user")
-    void editProfileImage(String user, byte[] image);
+
 
     @Query("SELECT profileImage from User where username = :user")
-    byte[] getUserProfileImage(String user);
+    String getUserProfileImage(String user);
+
+    @Query("SELECT u.id from User u where u.username = :username")
+    Long getUserIdByUsername(String username);
 }
 
 

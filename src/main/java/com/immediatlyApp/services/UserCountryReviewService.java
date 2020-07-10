@@ -20,4 +20,16 @@ public class UserCountryReviewService {
     public void addUserCountryReview(UserCountryReview userCountryReview) {
         userCountryReviewRepository.save(userCountryReview);
     }
+
+    public List<UserCountryReview> getUserCountryReviewsByUsername(String username) {
+        return userCountryReviewRepository.getUserCountryReviewsByUsername(username);
+    }
+
+    public UserCountryReview getUserCountryReviewById(Long id) {
+        return userCountryReviewRepository.getUserCountryReviewById(id);
+    }
+
+    public void updateUserCountryReview(UserCountryReview userCountryReview) {
+        userCountryReviewRepository.save(userCountryReview);
+    }
 }

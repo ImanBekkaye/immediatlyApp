@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.sql.Date;
 
 @Entity
 @Data
@@ -29,6 +30,11 @@ public class UserCountryReview extends BaseEntity {
     @JoinColumn(name = "city_id")
     private LKPCity city;
 
-    String placesToVisit;
-    String review;
+    private String visitedPlaces;
+    private String tripTitle;
+    private Date fromDate;
+    private Date toDate;
+    private String description;
+    private String tripImage;
+    private Boolean publicReview;
 }
